@@ -283,6 +283,19 @@ a:hover {
     padding-left: 0;
 }
 
+.container .row .col-sm-12 p {
+    font-size: 22px;
+}
+
+.grd {
+    font-size: 22px;
+    font-style: italic;
+}
+
+.ptt {
+    font-size: 15px;
+}
+
 #bloc-1-hero h1 {
     font-size: 32px;
 }
