@@ -705,7 +705,7 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    color: #502800!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -777,6 +777,10 @@ h4 {
 
 .bgc-white {
     background-color: #FFFFFF;
+}
+
+.bgc-grey {
+    background-color: grey;
 }
 
 .bgc-dark-slate-blue {
@@ -1052,4 +1056,21 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+#form_1 {
+    width: 80%;
+    padding: 4rem 0 4rem 0;
+}
+
+@media (min-width: 767px) {
+    .btn-wdth{
+        width: 30rem;
+        margin: auto;
+    }
+}
+
+.align-center {
+    display: flex;
+    justify-content: center;
 }

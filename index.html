@@ -12,6 +12,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	
     
 	<script src="./js/jquery-2.1.0.js"></script>
@@ -19,6 +22,11 @@
 	<script src="./js/blocs.js"></script>
 	<script src="./js/jquery.touchSwipe.js" defer></script>
 	<script src="./js/gmaps.js"></script>
+	<script src="./js/jquery-2.1.0.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/blocs.min.js"></script>
+	<script src="./js/jqBootstrapValidation.js"></script>
+	<script src="./js/formHandler.js"></script>
 
     <title>la Chouette Agence</title>
 
@@ -46,12 +54,7 @@
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
-						<a href="index.html">Accueil</a>
-					</li>
-					<li>
-					</li>
-					<li>
-						<a href="page2.html">Contact</a>
+						<a href="#form_1">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -70,7 +73,7 @@
 					La chouette agence.
 				</h1>
 				<div class="text-center">
-					<a href="page2.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
+					<a href="#form_1" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
 				</div>
 			</div>
 		</div>
@@ -202,19 +205,50 @@
 <!-- bloc-4-portfolio END -->
 
 <!-- bloc-5-cta -->
-<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
+<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc  texture-paper" id="bloc-5-cta">
 	<div class="container bloc-lg">
 		<div class="row">
-			<h2 class="mg-md text-center tc-white">
+			<h2 class="mg-md text-center white">
 				Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
 			</h2>
-			<div class="col-sm-12 text-center">
-				<a href="page2.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
+			<div class="bloc" id="bloc-7">
+				<div class="align-center bgc-white">
+					<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+						<div class="form-group">
+							<label>
+								Nom
+							</label>
+							<input id="name" class="form-control" required />
+						</div>
+						<div class="form-group">
+							<label>
+								Adresse email
+							</label>
+							<input id="email" class="form-control" type="email" required />
+						</div>
+						<div class="form-group">
+							<label>
+								Comment nous avez-vous connu ?
+							</label>
+							<input class="form-control" type="email" required id="input_504" />
+						</div>
+						<div class="form-group">
+							<label>
+								Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
+							</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</div> 
+						<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine btn-wdth" type="submit">
+							Envoyer
+						</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 <!-- bloc-5-cta END -->
+
+
 
 <!-- Footer - bloc-8 -->
 <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
