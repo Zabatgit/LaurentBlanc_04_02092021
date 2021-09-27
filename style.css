@@ -613,12 +613,12 @@ a[data-lightbox]:hover img {
     opacity: 0.3;
 }
 
-.close-lightbox:hover,
+/*.close-lightbox:hover,
 .next-lightbox:hover,
 .prev-lightbox:hover {
     opacity: 1.0;
     color: #FFF;
-}
+}*/
 
 .next-lightbox,
 .prev-lightbox {
@@ -806,7 +806,6 @@ h4 {
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
 }
 
 .ltc-white {
@@ -1090,5 +1089,9 @@ h4 {
 }
 
 #footer-title {
+    color: #502800!important;
+}
+
+.brown {
     color: #502800!important;
 }
